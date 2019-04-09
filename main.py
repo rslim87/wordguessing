@@ -114,7 +114,6 @@ def guessing(blank, word, guess, incorrect_letters, win):
   return (blank, word, guess, incorrect_letters, win)
 
 def art(guess):
-  #5: head, 4:body, 3:left arm, 2: right arm, 1: left leg, 0: right leg)
 
   body_parts = {
 
@@ -132,14 +131,11 @@ def art(guess):
 
   }
 
-    #1
   print(chr(32) * 2 + (chr(95) * 3))
-  #2
+  
   print(chr(32) + chr(124) + chr(32) * 3 + chr(124))
-  #3 head 
+
   print(body_parts[5] if guess <= 5 else chr(32) + chr(124)) 
-  #body 
-  #print( body_parts[4] if guess == 4 else chr(32) + chr(124))
 
   if guess > 4: 
     print(chr(32) + chr(124))
@@ -157,7 +153,6 @@ def art(guess):
   if guess == 0:
     print(body_parts[0])
   
-  #7stand
   print((chr(45) * 3))
 
 
